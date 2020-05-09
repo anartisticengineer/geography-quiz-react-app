@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import questionData from "./questions.json";
+import Question from "./components/questionScreen";
+import Results from "./components/resultsScreen";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {};
+  componentDidMount() {}
+
+  render() {
+    return (
+      <React.Fragment>
+        <Question
+          question={questionData["q1"]["question"]}
+          answers={questionData["q1"]["answers"]}
+        />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

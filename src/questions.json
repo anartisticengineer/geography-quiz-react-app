@@ -1,0 +1,57 @@
+{
+  "q1": {
+    "question": "What is the smallest country on earth in terms of area?",
+    "answers": ["Monaco", "San Marino", "Vatican City", "Nauru"],
+    "correct": "Vatican City"
+  },
+  "q2": {
+    "question": "Which country has the largest population of French speakers?",
+    "answers": [
+      "Morocco",
+      "Democratic Republic of the Congo",
+      "France",
+      "Cameroon"
+    ],
+    "correct": "Democratic Republic of the Congo"
+  },
+  "q3": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  "q4": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  "q5": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  "q6": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  "q7": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  "q8": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  "q9": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  "q10": {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  }
+}
