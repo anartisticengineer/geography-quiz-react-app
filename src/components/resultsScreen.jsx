@@ -6,7 +6,7 @@ const Results = (props) => {
       <h2>You got {props.numCorrect * 10} %!</h2>
       <h3>
         {props.numCorrect <= 5
-          ? "You suck lol"
+          ? "You can do better than that!"
           : props.numCorrect === 10
           ? "Perfect!"
           : "Not bad"}

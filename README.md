@@ -1,3 +1,12 @@
+<h1>Geography Quiz React app</h1>
+<p>Using primarily React, Bootstrap and JSON, design a short 10 question quiz that should do the following:</p>
+<ul>
+    <li>Store the question data (questions, answers and correct answers) in a separate JSON file.</li>
+    <li>Dynamically render the data into the questions component.</li>
+    <li>Display the results at the end, plus a message based on how well you did.</li>
+    <li>Look good while doing all of it ;)</li>
+</ul>
+<hr>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
