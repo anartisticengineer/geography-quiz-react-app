@@ -15,9 +15,9 @@
     "correct": "Democratic Republic of the Congo"
   },
   "q3": {
-    "question": "",
-    "answers": ["", "", "", ""],
-    "correct": ""
+    "question": "Which city is NOT a capital of South Africa?",
+    "answers": ["Bloemfontein", "Johannesburg", "Pretoria", "Cape Town"],
+    "correct": "Johannesburg"
   },
   "q4": {
     "question": "",
