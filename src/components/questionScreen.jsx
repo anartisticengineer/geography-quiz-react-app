@@ -8,16 +8,22 @@ class Question extends Component {
   componentDidMount() {
     console.log("Mounted");
   }
-  componentDidUpdate() {}
-  componentWillUnmount() {}
+  componentDidUpdate() {
+    console.log("Updated");
+  }
+  componentWillUnmount() {
+    console.log("Unmounted");
+  }
 
   handleClick = (event) => {
     event.preventDefault();
-    //console.log(event.target.name);
-    this.setState({ chosenAnswer: event.target.name });
+
     const yourAnswer = this.state.chosenAnswer;
-    const correctAnswer = this.props.question["correct"];
-    this.setState({ correctAnswer: yourAnswer === correctAnswer });
+    const correctOne = this.props.question["correct"];
+    this.setState({
+      chosenAnswer: event.target.name,
+      correctAnswer: yourAnswer === correctOne,
+    });
   };
 
   render() {
@@ -25,7 +31,6 @@ class Question extends Component {
       <div className="bg-dark text-light p-3">
         <h3 className="text-center pb-2">{this.props.question["question"]}</h3>
         {/*Render the answers dynamically via list */}
-        {/*Another option */}
         <div
           className="d-flex flex-wrap justify-content-center btn-group-toggle"
           data-toggle="buttons"

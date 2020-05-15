@@ -7,13 +7,15 @@ class Main extends Component {
     showResults: false,
   };
   componentDidMount() {
-    //document.addEventListener("submit", this.handleSubmit);
+    document.addEventListener("submit", this.handleSubmit);
   }
   componentWillUnmount() {
-    //document.removeEventListener("submit", this.handleSubmit);
+    document.removeEventListener("submit", this.handleSubmit);
   }
   handleSubmit = (event) => {
+    event.preventDefault();
     //console.log(event.target.id);
+    this.setState({ showResults: true });
   };
 
   goBack = () => {
@@ -28,24 +30,34 @@ class Main extends Component {
   };
   render() {
     return (
-      /*Putting the navigation buttons here (Might make this a separate class later)*/
+      /*Putting the navigation buttons here (Might make this a separate class later?)*/
       <React.Fragment>
-        <Pages currentPage={this.state.currentPage} />
+        <Pages
+          currentPage={this.state.currentPage}
+          showResults={this.state.showResults}
+        />
         {/*Navbar component*/}
         <footer>
           <div className="d-flex justify-content-around bg-secondary p-3">
+            {this.state.currentPage > 0 && (
+              <button
+                className="btn btn-light my-3"
+                id="prev-btn"
+                onClick={this.goBack}
+              >
+                Previous
+              </button>
+            )}
             <button
-              className="btn btn-light"
-              id="prev-btn"
-              onClick={this.goBack}
+              type="submit"
+              className="btn btn-light my-3"
+              id="submit-btn"
+              onClick={this.handleSubmit}
             >
-              Previous
-            </button>
-            <button type="submit" className="btn btn-light" id="submit-btn">
               Submit
             </button>
             <button
-              className="btn btn-light"
+              className="btn btn-light my-3"
               id="next-btn"
               onClick={this.goForward}
             >
